@@ -23,11 +23,7 @@ fetch('https://cdn.shopify.com/s/files/1/0564/3685/0790/files/singleProduct.json
             colorOption.classList.add("color-represntattion")
 
             colorOption.style.backgroundColor = colorValue;
-            colorOption.addEventListener('click', () => {
-                // Change main image based on selected color
-                const mainImage = document.getElementById('main-image');
-                mainImage.src = product.images[Math.floor(Math.random() * product.images.length)].src;
-            });
+           
             colorSelector.appendChild(colorOption);
         });
 
@@ -91,12 +87,13 @@ fetch('https://cdn.shopify.com/s/files/1/0564/3685/0790/files/singleProduct.json
         // You can attach this event listener after creating the radio buttons
 
 
-
+       
+        
         const addToCartButton = document.getElementById('add-to-cart');
         addToCartButton.addEventListener('click', () => {
             const addToCartEle = document.getElementById("add-to-cart-message")
             addToCartEle.style.display = "block"
-            addToCartEle.textContent = `${product.title} with color ${product.color} and size ${product}`
+            addToCartEle.textContent = `${product.title} with color Yellow and size ${product}`
 
             console.log('Product added to cart:', product.title, );
         });

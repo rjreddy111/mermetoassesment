@@ -121,7 +121,16 @@
 
 }
 
+.choose-color {
+    font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.36px;
+text-align: left;
+color:  #B9BBBF;
+;
 
+}
 
 .add-to-cart {
     width: 309px;
@@ -208,6 +217,7 @@
 button {
     border: none;
     outline: none;
+    background-color: transparent;
 }
 
 .horizontal {
